@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% if data %}
+	    <table>
+	    	<caption>DATA</caption>
+	    	<thead>
+	    		<tr>
+	    			<th>USN</th>
+	    			<th>NAME</th>
+	    			<th>AGE</th>
+	    			<th>STREAM</th>
+	    			<th>SECTION</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		{% for i in data %}
+	    			<th>{{ i.usn }}</th>
+	    			<th>{{ i.name }}</th>
+	    			<th>{{ i.age }}</th>
+	    			<th>{{ i.stream }}</th>
+	    			<th>{{ i.section }}</th>
+	    		{% endfor %}
+	    	</tbody>
+	    </table>
+	
+	{% endif %}
+</body>
+</html>
